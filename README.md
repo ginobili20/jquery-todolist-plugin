@@ -71,7 +71,7 @@ div id="container" class="container">
 
 ### 遇到的问题
 
-1.将我们的任务列表保存到哪里？
+#### 1.将我们的任务列表保存到哪里？
 
 cookie or localStorage
 
@@ -83,7 +83,7 @@ cookie or localStorage
 
 其次localStorage生命周期几乎是永久的，除非主动删除，否则长期保存在存储中
 
-2.最初任务列表的删除使用的是confirm方法 原生的弹出框 判断用户是否点击了删除
+#### 2.最初任务列表的删除使用的是confirm方法 原生的弹出框 判断用户是否点击了删除
 
 confirm是同步方法 会阻塞其他任务的到时提醒功能
 
@@ -119,7 +119,7 @@ $.ajax('data/url')
 ```
 
 
-1.then方法会返回一个新的Deferred对象，多个then连续使用，此功能相当于顺序调用异步回调。
+#### 1.then方法会返回一个新的Deferred对象，多个then连续使用，此功能相当于顺序调用异步回调。
 
 ```
 $.ajax({
@@ -175,7 +175,7 @@ var req1 = $.get('api1/data');
 ```
 
 
-2.when的方法使用，主要是对多个deferred对象进行并行化操作，当所有deferred对象都得到解决就执行后面添加的相应回调(是不是有点像Promise.all()
+#### 2.when的方法使用，主要是对多个deferred对象进行并行化操作，当所有deferred对象都得到解决就执行后面添加的相应回调(是不是有点像Promise.all()
 ```
 $.when(
         $.ajax({
@@ -301,3 +301,4 @@ Web Sockets
 ```
 
 
+[参考](https://www.cnblogs.com/webFrontDev/p/3265568.html)
