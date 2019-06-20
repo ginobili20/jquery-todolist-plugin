@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" href="node_modules/normalize.css/normalize.css">
+    <link rel="stylesheet" href="node_modules/jquery-datetimepicker/build/jquery.datetimepicker.min.css">
+    <link rel="stylesheet" href="./src/css/index.css">
+</head>
+<body>
+<div id="msg" class="msg">
+    <span class="msg-content" id="msg-content"></span>
+    <span class="anchor confirmed" id="confirmed">知道了</span>
+</div>
+
+<div id="container" class="container">
+    <h1>TODOLIST</h1>
+    <form id="form" style="overflow: hidden">
+        <input type="text" class="formText" id="formText" placeholder="e.g. 下午记得买菜" autofocus autocomplete="off">
+        <button type="submit" class="formBtn" id="formBtn">提交</button>
+    </form>
+
+    <!-- task-list -->
+    <div id="task-list" class="task-list">
+
+    </div>
+
+    <div class="task-detail-mask" id="task-detail-mask"></div>
+    <!--task-detail-->
+    <div class="task-detail" id="task-detail">
+
+    </div>
+</div>
+
+<video src="./src/assets/alert.mp3" class="alerter" id="alerter"></video>
+
+<script src="node_modules/jquery/dist/jquery.js"></script>
+<script src="node_modules/jquery-datetimepicker/build/jquery.datetimepicker.full.js"></script>
+<script src="node_modules/store/store.js"></script>
+<script src="./src/js/index.js"></script>
+
+<script>
+    var container = $('#container')
+
+    container.TodoList()
+</script>
+</body>
+</html>
